@@ -15,11 +15,11 @@ dist:
 		mkdir -p dist
 
 $(TARGET): dist $(SOURCES) src/wokwi-api.h
-	  clang --target=wasm32-unknown-wasi --sysroot /opt/wasi-libc -nostartfiles -Wl,--import-memory -Wl,--export-table -Wl,--no-entry -Werror -o $(TARGET) $(SOURCES)
+	clang --target=wasm32-unknown-wasi --sysroot /opt/wasi-libc -nostartfiles -Wl,--import-memory -Wl,--export-table -Wl,--no-entry -Werror -o $(TARGET) $(SOURCES)
 
 dist/chip.json: dist chip.json
-	  cp chip.json dist
+	cp chip.json dist
 
 .PHONY: test
 test:
-	  cd test && arduino-cli compile -e -b arduino:avr:uno blink
+	cd test && arduino-cli compile -e -b arduino:avr:uno blink

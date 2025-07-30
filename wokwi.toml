@@ -1,7 +1,7 @@
 [wokwi]
 version = 1
-firmware = '.pio/build/nodemcu-32s/firmware.bin' 
-elf = '.pio/build/nodemcu-32s/firmware.elf'
+elf = 'test/blink/build/arduino.avr.uno/blink.ino.with_bootloader.bin'
+firmware = 'test/blink/build/arduino.avr.uno/blink.ino.with_bootloader.hex'
 
 [[chip]]
 name = 'demultiplexer'
