@@ -1,0 +1,13 @@
+{
+  "name": "demultiplexer",
+  "author": "RIZZMAWAN",
+  "pins": [
+    "IN",
+    "SEL",
+    "Y0",
+    "Y1",
+    "GND",
+    "VCC",
+    "EN"
+  ]
+}
